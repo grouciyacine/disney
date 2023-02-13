@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:3px 30px ;
+    background-color: #090b13;
+    height: 60px;
+    align-items: center;
+z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo1{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    /*align-items: center;
+    display:flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    margin-right:auto ;
+    margin-left: 25px;
+    */
+    flex: 1;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    
+    
+}
+.lin{
+    display: flex;
+    padding: 1px 12px;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.lo{
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    padding: 0 2px;
+}
+.lin>span{
+position: relative;
+text-decoration: none;
+}
+.lin>span::after{
+content: '';
+height: 2px;
+width: 0;
+background: white;
+box-shadow: 0px 0px 2px black;
+border-radius: 10px;
+position: absolute;
+bottom: -3px;
+right:0;
+transition:.4s ;
+}
+.lin>span:hover::after{
+    width: 100%;
+    left: 0%;
+
+
+}
+.log{
+    border: 1px solid #f9f9f9;
+    padding: 6px 10px 6px 10px ;
+    border-radius: 4px;
+    cursor: pointer;
+text-transform: uppercase;
+transition: all .2s ease;
+}
+.log:hover{
+    background-color: white;
+    color: #090b13;
+}
+.gp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper>.ho{
+    position: absolute;
+    top: 48px;
+    right: 40px;
+    background-color:rgb(19, 19, 19);
+    border: 1px solid #090b13;
+    border-radius: 4px;
+    box-shadow: rgb(0  0 0 /50%) 0px 0px 18px 0px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100px;
+    opacity: 0;
+}
+
+.wrapper:hover .ho{
+visibility:visible;
+opacity: 1;
+transition-duration:1s; 
+}
+@media (max-width:768px){
+    .menu{
+        display:none;
+    }
+}
+
