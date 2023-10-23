@@ -46,3 +46,4 @@ Check out our [Next.js deploym
 <img width="960" alt="Screenshot 2023-05-10 221125" src="https://github.com/grouciyacine/disney/assets/107037694/8f5d5b57-4140-49cb-a2bb-7e1cbdada89a">
 
 ent documentation](https://nextjs.org/docs/deployment) for more details.
+
